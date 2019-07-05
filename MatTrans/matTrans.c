@@ -42,10 +42,13 @@ int main(void)
     /*Primeiro é preciso alocar o espaço da matriz
     transposta na memória, em seguida ela recebe
     o retorno da função */
-    trp = (int**) malloc(m*sizeof(int*));
+    trp = (int**) malloc(m*n*sizeof(int*));
     *trp = transposta(3,3, *mat);
     
-    /*Não é possível mostrar a mastriz transposta */
+    /*Não é possível mostrar a matriz transposta */
+    printf("%d %d %d\n", trp[0][0], trp[0][1], trp[0][2]);
+    //printf("%d %d %d\n", trp[1][0], trp[1][1], trp[1][2]);
+    //printf("%d %d %d\n\n\n", trp[2][0], trp[2][1], trp[2][2]);
 
     /*Desaloca toda a memória ocupada pela a matriz */
     for (i = 0; i < m; i++)
