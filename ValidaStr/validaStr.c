@@ -27,7 +27,7 @@ int main(void)
     char c;
     int v;
 
-    printf("Digite um caractere: "); scanf("%c", &c);
+    printf("Digite um caractere: "); scanf(" %c", &c);
     
     printf("Validando letra...\n");
     v = valida_str(c);
