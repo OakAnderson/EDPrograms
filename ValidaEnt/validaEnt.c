@@ -11,7 +11,7 @@ int valida_str(char* str)
     /*O comando for percorre a string para
     encontrar os valores inválidos  */
     for (i = 0; str[i] != '\0'; i++){
-        /*A cara volta pelo for, o if testa se o caractere é uma letra
+        /*A cada volta pelo for, o if testa se o caractere é uma letra
         ou espaço(De acordo com a tabela ASCII) */
         if (!((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z') || (str[i] == ' ')))
             cont ++;
