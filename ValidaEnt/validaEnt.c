@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*Função que valida se a cadeia de caracteres tem somente letras (ASCII) */
-int isalpha(char* str)
+int valida_str(char* str)
 {  
     /*#i é um contador.
     #cont serve para contar se foi  encontrado
@@ -37,7 +37,7 @@ int main(void)
 
     /*Pega o valor de retorno da função e mostra na tela
     se há somente letras ou não. */
-    if (isalpha(entrada))
+    if (valida_str(entrada))
         printf("Há somente letras.\n");
     else
     {
